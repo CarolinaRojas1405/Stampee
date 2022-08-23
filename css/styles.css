@@ -1,0 +1,97 @@
+
+
+.container {
+    margin: 30px;
+    padding: 30px;
+}
+
+
+.buttons {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #ffffff;
+    background-color: #103a4e;
+    border-radius: 6px;
+    border: 2px solid;
+}
+
+.btn-blue:hover {
+    color: #103a4e;
+    background-color: #ffffff;
+}
+
+.btn>a {
+    text-decoration: none;
+    display: block;
+    color: #ffffff;
+}
+
+form {
+    margin: 25px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    background: #eee;
+}
+
+.form-element {
+    margin: 20px 0;
+}
+
+input, select {
+    font-size: 18px;
+    background-color: rgb(232, 240, 254);
+}
+
+input:not([type=radio]),
+select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+textarea{
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+input[type=submit]{
+    background-color: #103a4e;
+    color: white;
+    padding: 8px;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+}
+
+input[type=file]{
+    background-color: #ffff;
+    size: 60;
+}
+
+.icone {
+    color: red;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+
+.cerrar-sesion{
+    float: right;
+}
+
+
+
+

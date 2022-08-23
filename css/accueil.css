@@ -1,0 +1,512 @@
+.container {
+    max-width: 50vw;
+    margin: 0 auto 2vw;
+    box-sizing: border-box;
+    padding: 2rem;
+}
+
+.form {
+    margin: 25px auto;
+    padding: 20px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+    background: #eee;
+}
+
+.form-element {
+    margin: 20px 0;
+}
+
+.input{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+}
+
+.buttons, .titre__table, .center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    margin: 1rem;
+}
+
+.table {
+    margin: 60px auto;
+}
+
+table {
+    background-color: white;
+    table-layout: auto;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 30px;
+}
+
+thead {
+    background-color: #20325A;
+    border-bottom: solid 5px #926938;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.icone {
+    color: red;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.liste__timbres{
+    padding: 2rem;
+    margin: 2rem;
+}
+
+
+
+
+/* ------banner------------ */
+
+.banner-top {
+    margin: 0 auto;
+    max-width: 95vw;
+}
+
+.banner__photo {
+    grid-column: 3 / 12;
+    grid-row: 1;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.banner__photo>img {
+    display: block;
+    width: 100%;
+    max-height: 90vh;
+    object-fit: cover;
+    filter: brightness(70%);
+    border-radius: 3px;
+}
+
+.banner__text {
+    grid-row: 1;
+    grid-column: 1 / 6;
+    align-self: center;
+    padding-left: 1em;
+}
+
+.banner__titre {
+    margin-top: 0;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+.banner__text-devise {
+    padding: 2rem 1.5rem;
+    background-color: #fff;
+    border-radius: 3px;
+    position: relative;
+}
+
+.bouton {
+    position: absolute;
+    margin: 1rem 13rem;
+    padding: .5rem 1rem;
+    border: 2px solid rgba(0, 17, 105, 0.8);
+    background-color: #20325A;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ededed;
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+.bouton:hover{
+    box-shadow: 0 0 5px rgba(0, 0, 0);
+    background-color: rgba(225, 225, 225, .56);
+    color: #001169;
+    font-weight: 400;
+}
+
+.submit {
+    font-size: 1.2rem;
+    padding: 4px 10px;
+    border: .095rem solid #001169;
+    max-width: max-content;
+    border-radius: 4px;
+    background-color: #20325A;
+    color: #ededed;
+}
+
+
+
+
+/* ------------offres en cours (vedettes)------------ */
+
+
+.conteneur-vedettes {
+    margin: 0;
+    background-color: #E4E0DB;
+}
+
+
+.vedettes {
+    grid-column: 3 / 11;
+    grid-row: 2;
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.vedettes__entete {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    font-size: 1.728rem;
+}
+
+.vedettes__liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1.5fr));
+    list-style: none;
+    justify-items: center;
+}
+
+.vedettes__item {
+    background-color: hsla(0, 6%, 87%, 0.49);
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 10px 8px 0 rgb(0 0 0 / 8%);
+}
+
+.vedettes__item:hover {
+    box-shadow:
+		0px 1px 2px 1px hsla(0, 0%, 0%, 0.2),
+		1px 0px 2px 1px hsla(0, 0%, 0%, 0.05);
+}
+
+.topCorner {
+    position: absolute;
+}
+
+.new {
+    font-weight: 500;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 4px 8px;
+    background-color: hsla(0, 91%, 17%, 0.8);;
+    max-width: max-content;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.vedettes__img {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.vedettes__img>a>img {
+    width: 100%;
+    height: auto;
+}
+
+
+.vedettes__texte {
+    display: grid;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.vedettes__texte h3 {
+    color: #001169;
+    margin-top: .5em;
+    font-size: 1.055rem;
+}
+
+
+/* ----- presentation Lord Stampee-------- */
+
+.about-lord__ppal {
+    grid-column: 3 / 6;
+    display: flex;
+    margin: 4em 0;
+    width: 100%;
+    height: auto;
+}
+
+.photo-lord {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-lord__texte {
+   grid-column: 6 / 11;
+   margin: 4em 1em;
+}
+
+.h2 {
+    font-size: 2.075rem;
+}
+
+.p {
+    margin-bottom: 2em;
+    line-height: 1.75;
+    font-weight: 500;
+    font-size: 1.175rem;
+}
+
+.btn__about-lord {
+    display: grid;
+    justify-content: start;
+}
+
+.btn-savoir-plus {
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 4px 10px;
+    border: .095rem solid #926938;
+    max-width: max-content;
+    border-radius: 4px;
+    background-color: #E4E0DB;
+    color: #8B0D32;
+}
+
+.btn-savoir-plus:hover {
+    border:.095rem solid #926938;
+    color: #20325A;
+}
+
+
+
+/* -------Mission---------- */
+
+
+.main_section {
+    background-color: #E4E0DB;
+    padding: 2rem;
+}
+
+.section_titre {
+    text-align: center;
+    font-size: 1.438rem;
+    padding: 2em 2em;
+    margin: 0 8em;
+}
+
+.cards_small_flex {
+    flex: 1 0 48%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: row;
+    padding-bottom: 3em;
+}
+
+.card_small {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    flex-basis: 20%;
+    border-radius: 15px;
+    padding: 1.750em;
+    background-color: hsla(0, 0%, 93%, 0.8);
+}
+
+.card_small h2{
+    padding-bottom: 10px;
+}
+
+.card_small-img {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0.95;
+    width: 100%;
+    height: 94px;
+}
+
+.card_small-img > img {
+    box-sizing: border-box;
+    max-width: 100%;
+    height: 94px;
+}
+
+.card_small-text {
+    padding: 20px 0;
+}
+
+.card_content {
+    margin-top: 0.750em;
+    padding: 0.750em;
+    font-size: 1.175rem;
+    text-align: center;
+}
+
+
+
+/*===================================================
+
+ ************** media queries  *************
+
+=====================================================
+*/
+
+/* Téléphone (320px à ~1150px) */
+@media all and (min-width:320px) and (max-width:1150px){
+
+    .banner__photo {
+        grid-column: 1 / 13;
+        margin-bottom: 1rem;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner__text {
+        grid-column: 1 / 10;
+        padding-left: 0;
+    }
+
+    .banner__titre {
+        font-size: 1.775rem;
+        font-weight: 500;
+    }
+
+    .banner__text-devise> span {
+        font-size: 1rem;
+    }
+
+    .banner__text-devise {
+        padding: 1.3rem .5rem;
+        background-color: rgba(225, 225, 225, .56);
+    }
+
+    .bouton {
+        margin: .5rem 1rem;
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .vedettes {
+        margin: .5rem 0;
+    }
+
+    .vedettes__entete {
+        font-size: 1.228rem;
+    }
+
+    .vedettes__liste {
+        grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+    }
+
+    .about-lord__ppal {
+        grid-column: 4 / 10;
+        margin: 1.5em 0 0;
+    }
+
+    .about-lord__texte {
+        grid-column: 2 / 12;
+        margin: 1em;
+    }
+
+    .h2 {
+        font-size: 1.175rem;
+    }
+
+    .p {
+        font-size: 0.875rem;
+    }
+    .btn-savoir-plus {
+        font-size: .7rem;
+        padding: 3px 8px;
+    }
+
+    .section_titre {
+        font-size: 0.875rem;
+        padding: 1em 1em;
+        margin: 0 2em;
+    }
+
+    .cards_small_flex {
+        flex: 100%;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 3em;
+    }
+
+    .card_small {
+        margin: .5em;
+        flex-basis: 100%;
+        padding: 1.25em;
+    }
+
+    .card_content {
+        margin-top: 0.50em;
+        padding: 0.50em;
+        font-size: 0.875rem;
+        text-align: center;
+    }
+
+}
+
+/* Portable (~1151px à ~1700px) */
+@media all and (min-width:1151px) and (max-width:1700px){
+
+
+    .bouton {
+        margin: .5rem 6rem;
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .about-lord__ppal {
+        grid-column: 2 / 5;
+        display: flex;
+        align-items: flex-start;
+        margin: 4em 0 0;
+    }
+
+    .about-lord__texte {
+        grid-column: 5 / 12;
+        margin: 1em;
+    }
+
+}
+
+@media all and (min-width:1701px){
+
+    .bouton {
+        margin: .5rem 13rem;
+        padding: .5rem .5rem;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+
+    .vedettes__liste {
+        grid-template-columns: repeat(auto-fill, minmax(16em, 1fr));
+    }
+
+}
+

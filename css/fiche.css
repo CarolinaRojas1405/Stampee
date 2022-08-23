@@ -1,0 +1,504 @@
+
+.lot-details__conteneur-ppal {
+    grid-column: 3 / 8;
+    margin: 2rem 0 0;
+}
+
+.lot-details__header {
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: auto;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.lot-details__titre {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1;
+    margin-top: 0;
+}
+
+.lot_details__nb {
+    margin: auto;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.lot-details__favori {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.container_image {
+    box-sizing: border-box;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 4px;
+    width: 90%;
+}
+
+  ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+  ul.slider {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+  }
+
+  ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background: #ededed;
+  }
+
+  ul.slider li img {
+    width: 100%;
+    height: 40vh;
+    object-fit: contain;
+  }
+
+  ul.slider li:first-child {
+      opacity: 1;
+  }
+
+  ul.slider li:target {
+      opacity: 1;
+  }
+
+  .menu {
+    text-align: center;
+    margin: 1.2rem;
+  }
+
+  .menu li {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .menu li a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ededed;
+    padding: 0.55rem;
+    width: 60px;
+    height: 70px;
+  }
+
+  .menu li a img {
+      width: 100%;
+      height: 100%;
+  }
+
+
+
+/* ------aside---------- */
+
+.lot-details__aside {
+    grid-column: 8 / 11;
+    text-align: left;
+    margin: 2rem 0;
+    max-width: 100%;
+}
+
+.lot-offre-col-wrapper .enchere {
+    border: 1px solid #925938;
+    border-radius: 3px;
+}
+
+.lot-offre-bloc .enchere {
+    flex-direction: column;
+}
+
+.lot-offre-col__section {
+    flex-grow: 0;
+}
+
+.lot-offre-col__section>* {
+    padding: 1.25rem 1rem;
+}
+
+.lot-offre-status__wrapper {
+    text-align: center;
+    color: #ededed;
+    padding: 1rem;
+    background-color: #20325A;
+}
+
+.lot-offre-status__timer {
+    font-size: 1.25rem;
+}
+
+.lot-offre-actuelle__valeur {
+    font-size: 1.25rem;
+}
+
+.border {
+    border-bottom: 0.0625rem solid #926938;
+}
+
+.lot-offre-minimale-suivante {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.sivante-min {
+    margin-top: 0.25rem;
+}
+
+.sivante-min span {
+    font-size: 0.975rem;
+    color: #20325A;
+}
+
+.lot-offre-minimale-suivante-text span{
+    font-size: 0.85rem;
+}
+
+.boutons {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bouton__offre-rapide {
+    text-align: center;
+    border: 1px solid #926938;
+    border-radius: 2px;
+}
+
+.bouton__offre-rapide {
+    margin-right: 0.5rem;
+}
+
+.o-bouton {
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: center;
+    background-color: #20325A;
+    color: #ededed;
+    padding: 0.8125rem 1rem;
+    flex-grow: 1;
+}
+
+.lot-offre-bloc__placer:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.titre-side {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.1429;
+    margin-bottom: 1rem;
+}
+
+.lot-offre-bloc__input {
+    display: block;
+    width: 80%;
+    flex-grow: 1;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.lot-offre-bloc__bouton {
+    background-color: #20325A;
+    color: #ededed;
+}
+
+.offre-input {
+    background-color: #ffffff;
+    border: 0.0725rem solid rgba(34, 34, 34, 0.16);
+    color: #20325A;
+    height: auto;
+    padding: 0.8125rem 0.155rem;
+    width: calc(100% + 0.5rem);
+    margin-left: -0.25rem;
+}
+
+.lot-details-aside {
+    margin-top: 2rem;
+}
+
+.lot-offre-vertical {
+    padding: 1rem;
+}
+
+.acheter-titre {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.125;
+}
+
+.acheter-securite {
+    margin-top: 0.5rem;
+    align-items: baseline;
+}
+
+.acheter-securite svg {
+    flex: 0 0 1rem;
+    margin-right: 0.5rem;
+    width: 100%;
+    fill: #3370c0;
+}
+
+.acheter-securite span {
+    font-size: 0.875rem;
+}
+
+.acheter-moyens .fab {
+    margin-right: 1rem;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/*-------- section description du lot ------ */
+
+.lot-details__description {
+    display: flex;
+    flex-wrap: nowrap;
+    grid-column: 3 / 8;
+    grid-row: 2;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.lot-detail__description-wrapper {
+    width: 100%;
+}
+
+.accordeon__section {
+    border-bottom: 1px solid #926938;
+}
+
+.accordeon__section:first-child {
+    border-top: 1px solid #926938;
+}
+
+.accordeon__bouton {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.accordeon__content {
+    padding-bottom: 1.5rem;
+}
+
+.lot-details {
+    display: flex;
+}
+
+.lot-details>* {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.lot-details__nom {
+    font-weight: 700;
+    line-height: 1.125;
+    max-width: 19.625rem;
+    margin-right: 1rem;
+    color: #20325A;
+}
+
+.lot-vendeur {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.lot-vendeur-info:first-child {
+    margin-top: 0;
+}
+
+.lot-vendeur-info {
+    margin-right: 0.25rem;
+}
+
+.lot-vendeur-wrapper {
+    padding-left: 1.5rem;
+}
+
+.lot-vendeur__flag {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 0.3rem;
+    position: absolute;
+    margin-left: -1.5rem;
+}
+
+.lot-vendeur__nom {
+    padding: .3rem 1rem;
+    font-size: 1.057rem;
+}
+
+.lot-vendeur__texte {
+    margin: 0.5rem 0;
+}
+
+.vendeur-heading {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.125;
+    margin-bottom: 0.5rem;
+}
+
+.vendeur-avis {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.vendeur-avis__item {
+    flex-grow: 1;
+    list-style: none;
+}
+
+.vendeur-avis__nombre {
+    font-weight: 700;
+}
+
+.vendeur-icone {
+    justify-content: center;
+    padding: 1rem;
+}
+
+.far {
+    display: block;
+    width: 4em;
+    height: auto;
+    font-size: 1.3rem;
+}
+
+.fa-smile {
+    color: green;
+}
+
+.fa-frown {
+    color: #9b0d32;
+}
+
+.vendeur-avis__title {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.lot-similaire {
+    flex-wrap: nowrap;
+    grid-column: 2 / 12;
+    grid-row: 3;
+    margin: -2rem 0 1rem;
+    padding: 1rem;
+}
+
+.lot-similaire-entete {
+    padding: 1em;
+}
+
+.lot-similaire__liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+}
+
+/*===============================================
+
+ ************** media queries  *************
+
+=================================================
+*/
+/* Téléphone et tablette (320px à ~1150px) */
+@media all and (min-width:320px) and (max-width:1150px){
+
+    .lot-details__conteneur-ppal {
+        grid-column: 2 / 12;
+        margin: 1rem 0 0;
+    }
+
+    .lot-details__titre {
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 65vw;
+        padding: 1rem;
+    }
+
+    ul.slider {
+        width: 65vw;
+    }
+
+    .menu {
+        margin: 1rem;
+    }
+
+    .menu li a {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #ededed;
+        padding: 0.55rem;
+        width: 30px;
+        height: 40px;
+    }
+
+    .lot-details__aside {
+        display: none;
+    }
+
+    .lot-details__description {
+        grid-column: 2 / 12;
+        grid-row: 2;
+        margin: .5rem 0 .5rem;
+    }
+
+    .accordeon__title> span{
+        font-size: 1rem;
+    }
+
+    .accordeon__content {
+        padding: .5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .lot-vendeur {
+        font-size: 0.75rem;
+        line-height: 1;
+    }
+
+    .vendeur-avis {
+        text-align: left;
+        margin: .5rem;
+    }
+
+    .vendeur-avis__nombre {
+        font-weight: 600;
+    }
+
+    .vendeur-icone {
+        justify-content: start;
+        padding: .5rem;
+    }
+
+
+
+}
+

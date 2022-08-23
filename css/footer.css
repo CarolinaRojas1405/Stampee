@@ -1,0 +1,347 @@
+
+
+/* ---footer----- */
+
+.footer {
+    background-color: #20325A;
+    color: #ededed;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+
+.footer p, .footer a, .footer li {
+    font-size: 1.0625rem;
+    line-height: 1.6em;
+    text-decoration: none;
+    list-style: none;
+}
+
+.footer a:hover {
+    color: #FFFFFF;
+}
+
+.footer_container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1em 7em;
+}
+
+.box {
+    padding: 0;
+    margin: 0;
+}
+
+.main_footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu_footer>div>* {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+
+.menu_footer>div>ul>li {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.footer h2 {
+    font-weight: 500;
+    font-size: 1.625rem;
+    color: #ffffff;
+}
+
+.footer h3 {
+    color: #ffffff;
+    font-size: 22px;
+    line-height: 2em;
+}
+
+.contacts_footer {
+    display: flex;
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.help {
+    padding: 0 20px;
+    margin: 0 10px;
+}
+
+.footer_social {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2em;
+}
+
+.socials {
+    display: inline-block;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.socials li {
+    padding: 10px 0;
+    margin: 0 5px;
+    display: inline-block;
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.fa {
+    display: inline-block;
+}
+
+.socials .fa {
+    padding: 20px;
+    font-size: 23px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.socials .fa:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #FFFFFF;
+}
+
+.socials a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.center_footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+}
+
+.fa-question-circle:before {
+    content: "\f059";
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: 'Pacifico';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pacifico Regular'),
+    local('Pacifico-Regular'),
+    url(https://fonts.gstatic.com/s/pacifico/v12/FwZY7-Qmy14u9lezJ-6H6MmBp0u-.woff2) format('woff2');
+    font-display: swap;
+  }
+
+.copyright {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.copyright span {
+    color: #ffffff;
+    font-weight: inherit;
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+
+
+
+    /*================================================
+
+       ************  media queries  ************
+
+=================================================
+*/
+/* Téléphone (320px à ~500px) */
+@media all and (min-width:320px) and (max-width:500px){
+
+
+    .footer p, .footer a, .footer li {
+        font-size: 0.625rem;
+        line-height: 1.3em;
+    }
+
+    .footer_container {
+        padding: 0 .3rem;
+    }
+
+    .main_footer {
+        display: block;
+        flex-basis: 1;
+    }
+
+    .menu_footer>div>* {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 .3rem;
+    }
+
+    .menu_footer>div>ul>li {
+        display: inline-block;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    .footer h2 {
+        font-weight: 300;
+        font-size: 0.688rem;
+    }
+
+    .footer h3 {
+        font-size: 0.688rem;
+        line-height: 1em;
+    }
+    .contacts_footer {
+        font-size: 0.438rem;
+        justify-content: center;
+    }
+
+    .footer_social {
+        display: flex;
+        flex-direction: column;
+        margin-top: .5em;
+    }
+
+    .socials {
+        display: inline-block;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-bottom: .5em;
+    }
+
+    .socials>ul {
+        margin: 0.25rem 0;
+    }
+
+    .socials li {
+        padding: 0;
+        margin: 0 .25rem;
+        flex-basis: 1;
+        text-align: center;
+    }
+
+    .socials .fa {
+        padding: 0.625rem;
+        font-size: 0.688rem;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .copyright {
+        text-align: center;
+        margin: .25rem auto;
+    }
+
+    .copyright span {
+        font-size: 0.688rem;
+    }
+}
+
+    /* Tablette (~500px à ~1150px) */
+@media all and (min-width:501px) and (max-width:1150px){
+
+    .footer p, .footer a, .footer li {
+        font-size: 0.625rem;
+        line-height: 1.3em;
+    }
+
+    .footer_container {
+        padding: 0 1rem;
+    }
+
+    .main_footer {
+        display: block;
+        flex-basis: 1;
+    }
+
+    .menu_footer>div>* {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 .3rem;
+    }
+
+    .menu_footer>div>ul>li {
+        display: inline-block;
+        flex-wrap: wrap;
+        padding: 5px 10px;
+        margin: 5px;
+        text-decoration: none;
+    }
+
+    .footer h2 {
+        font-weight: 300;
+        font-size: 0.688rem;
+    }
+
+    .footer h3 {
+        font-size: 0.688rem;
+        line-height: 1em;
+    }
+    .contacts_footer {
+        font-size: 0.438rem;
+        justify-content: center;
+    }
+
+    .footer_social {
+        display: flex;
+        flex-direction: column;
+        margin-top: .5em;
+    }
+
+    .socials {
+        display: inline-block;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        margin-bottom: .5em;
+    }
+
+    .socials>ul {
+        margin: 0.25rem 0;
+    }
+
+    .socials li {
+        padding: 0;
+        margin: 0 .25rem;
+        flex-basis: 1;
+        text-align: center;
+    }
+
+    .socials .fa {
+        padding: 0.625rem;
+        font-size: 0.688rem;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+
+    .copyright {
+        text-align: center;
+        margin: .25rem auto;
+    }
+
+    .copyright span {
+        font-size: 0.688rem;
+    }
+
+
+}
